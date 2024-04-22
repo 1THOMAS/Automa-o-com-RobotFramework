@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.3 on win32)" generated="20230528 21:42:28.081" rpa="false" schemaversion="3">
+<suite id="s1" name="Textarea" source="D:\Projetos\curso-robot\textarea.robot">
+<test id="s1-t1" name="Cenário 1: Preencher formulário Textarea Practice" line="80">
+<kw name="Dado que acesso o site" library="setup_teardown" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>url=https://itera-qa.azurewebsites.net/home/automation</arg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230528 21:42:28.346" level="INFO">Opening browser 'chrome' to base url 'https://itera-qa.azurewebsites.net/home/automation'.</msg>
+<status status="PASS" starttime="20230528 21:42:28.346" endtime="20230528 21:42:30.997"/>
+</kw>
+<status status="PASS" starttime="20230528 21:42:28.345" endtime="20230528 21:42:30.998"/>
+</kw>
+<kw name="E preencher campos">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_name}</arg>
+<arg>Joaquim</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230528 21:42:31.000" level="INFO">Typing text 'Joaquim' into text field '//input[@id='name']'.</msg>
+<status status="PASS" starttime="20230528 21:42:30.999" endtime="20230528 21:42:31.100"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_phone}</arg>
+<arg>940028922</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230528 21:42:31.100" level="INFO">Typing text '940028922' into text field '//input[@id='phone']'.</msg>
+<status status="PASS" starttime="20230528 21:42:31.100" endtime="20230528 21:42:31.165"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_email}</arg>
+<arg>joaquimferreira@teste.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230528 21:42:31.166" level="INFO">Typing text 'joaquimferreira@teste.com' into text field '//input[@id='email']'.</msg>
+<status status="PASS" starttime="20230528 21:42:31.166" endtime="20230528 21:42:31.236"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_password}</arg>
+<arg>1234</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230528 21:42:31.236" level="INFO">Typing text '1234' into text field '//input[@id='password']'.</msg>
+<status status="PASS" starttime="20230528 21:42:31.236" endtime="20230528 21:42:31.300"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${textarea_address}</arg>
+<arg>xxxxxxxxxxxxxxxxxxxxxx</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230528 21:42:31.301" level="INFO">Typing text 'xxxxxxxxxxxxxxxxxxxxxx' into text field '//textarea[@id='address']'.</msg>
+<status status="PASS" starttime="20230528 21:42:31.301" endtime="20230528 21:42:31.378"/>
+</kw>
+<status status="PASS" starttime="20230528 21:42:30.999" endtime="20230528 21:42:31.378"/>
+</kw>
+<kw name="E clicar no submit">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${button_submit}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230528 21:42:31.379" level="INFO">Clicking element '//button[@name='submit']'.</msg>
+<status status="PASS" starttime="20230528 21:42:31.378" endtime="20230528 21:42:31.422"/>
+</kw>
+<status status="PASS" starttime="20230528 21:42:31.378" endtime="20230528 21:42:31.422"/>
+</kw>
+<status status="PASS" starttime="20230528 21:42:28.345" endtime="20230528 21:42:31.422"/>
+</test>
+<test id="s1-t2" name="Cenário 2: Preenchendo as CheckBox &amp; Radio Button practice" line="84">
+<kw name="Dado que acesso o site" library="setup_teardown" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>url=https://itera-qa.azurewebsites.net/home/automation</arg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230528 21:42:31.424" level="INFO">Opening browser 'chrome' to base url 'https://itera-qa.azurewebsites.net/home/automation'.</msg>
+<status status="PASS" starttime="20230528 21:42:31.423" endtime="20230528 21:42:34.460"/>
+</kw>
+<status status="PASS" starttime="20230528 21:42:31.423" endtime="20230528 21:42:34.460"/>
+</kw>
+<kw name="E clicar nos campos genero">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//input[@id='male']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230528 21:42:34.461" level="INFO">Clicking element '//input[@id='male']'.</msg>
+<status status="PASS" starttime="20230528 21:42:34.461" endtime="20230528 21:42:34.515"/>
+</kw>
+<status status="PASS" starttime="20230528 21:42:34.460" endtime="20230528 21:42:34.515"/>
+</kw>
+<kw name="E selecionar os dias da semana">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${input_monday}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230528 21:42:34.516" level="INFO">Clicking element '//input[contains(@id,'monday')]'.</msg>
+<status status="PASS" starttime="20230528 21:42:34.516" endtime="20230528 21:42:34.552"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${input_Tuesday}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230528 21:42:34.553" level="INFO">Clicking element '//input[contains(@id,'tuesday')]'.</msg>
+<status status="PASS" starttime="20230528 21:42:34.553" endtime="20230528 21:42:34.589"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${input_Wednesday}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230528 21:42:34.589" level="INFO">Clicking element '//input[contains(@id,'wednesday')]'.</msg>
+<status status="PASS" starttime="20230528 21:42:34.589" endtime="20230528 21:42:34.624"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${input_Thursday}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230528 21:42:34.624" level="INFO">Clicking element '//input[contains(@id,'thursday')]'.</msg>
+<status status="PASS" starttime="20230528 21:42:34.624" endtime="20230528 21:42:34.657"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${input_Friday}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230528 21:42:34.658" level="INFO">Clicking element '//input[contains(@id,'friday')]'.</msg>
+<status status="PASS" starttime="20230528 21:42:34.657" endtime="20230528 21:42:34.689"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${input_Saturday}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230528 21:42:34.690" level="INFO">Clicking element '//input[contains(@id,'saturday')]'.</msg>
+<status status="PASS" starttime="20230528 21:42:34.690" endtime="20230528 21:42:34.722"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${input_Sunday}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230528 21:42:34.722" level="INFO">Clicking element '//input[contains(@id,'sunday')]'.</msg>
+<status status="PASS" starttime="20230528 21:42:34.722" endtime="20230528 21:42:34.753"/>
+</kw>
+<status status="PASS" starttime="20230528 21:42:34.515" endtime="20230528 21:42:34.753"/>
+</kw>
+<status status="PASS" starttime="20230528 21:42:31.423" endtime="20230528 21:42:34.754"/>
+</test>
+<test id="s1-t3" name="Cenário 3: selecionando um pais com DropDown" line="88">
+<kw name="Dado que acesso o site" library="setup_teardown" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>url=https://itera-qa.azurewebsites.net/home/automation</arg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230528 21:42:34.755" level="INFO">Opening browser 'chrome' to base url 'https://itera-qa.azurewebsites.net/home/automation'.</msg>
+<status status="PASS" starttime="20230528 21:42:34.755" endtime="20230528 21:42:37.729"/>
+</kw>
+<status status="PASS" starttime="20230528 21:42:34.755" endtime="20230528 21:42:37.729"/>
+</kw>
+<kw name="E selecionar um pais">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${input_country}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230528 21:42:37.730" level="INFO">Clicking element '//option[contains(text(),'Italy')]'.</msg>
+<status status="PASS" starttime="20230528 21:42:37.730" endtime="20230528 21:42:37.766"/>
+</kw>
+<status status="PASS" starttime="20230528 21:42:37.730" endtime="20230528 21:42:37.766"/>
+</kw>
+<status status="PASS" starttime="20230528 21:42:34.754" endtime="20230528 21:42:37.767"/>
+</test>
+<test id="s1-t4" name="Cenário 4: Preenchendo formulário CheckBox &amp; Radio button" line="91">
+<kw name="Dado que acesso o site" library="setup_teardown" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>url=https://itera-qa.azurewebsites.net/home/automation</arg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230528 21:42:37.769" level="INFO">Opening browser 'chrome' to base url 'https://itera-qa.azurewebsites.net/home/automation'.</msg>
+<status status="PASS" starttime="20230528 21:42:37.768" endtime="20230528 21:42:40.310"/>
+</kw>
+<status status="PASS" starttime="20230528 21:42:37.768" endtime="20230528 21:42:40.310"/>
+</kw>
+<kw name="E selecionar o ano">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${input_year}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230528 21:42:40.311" level="INFO">Clicking element '//label[contains(@for,'1year')]'.</msg>
+<status status="PASS" starttime="20230528 21:42:40.310" endtime="20230528 21:42:40.362"/>
+</kw>
+<status status="PASS" starttime="20230528 21:42:40.310" endtime="20230528 21:42:40.362"/>
+</kw>
+<kw name="E selecionar as automacoes e framework">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${input_selenium}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230528 21:42:40.363" level="INFO">Clicking element '//label[contains(@for,'selenium')]'.</msg>
+<status status="PASS" starttime="20230528 21:42:40.363" endtime="20230528 21:42:40.406"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${input_testng}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230528 21:42:40.406" level="INFO">Clicking element '//label[contains(@for,'testng')]'.</msg>
+<status status="PASS" starttime="20230528 21:42:40.406" endtime="20230528 21:42:40.442"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${input_serenity}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230528 21:42:40.443" level="INFO">Clicking element '//label[contains(@for,'serenity')]'.</msg>
+<status status="PASS" starttime="20230528 21:42:40.442" endtime="20230528 21:42:40.477"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${input_mabl}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230528 21:42:40.478" level="INFO">Clicking element '//label[contains(@for,'mabl')]'.</msg>
+<status status="PASS" starttime="20230528 21:42:40.478" endtime="20230528 21:42:40.511"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${input_testim}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230528 21:42:40.512" level="INFO">Clicking element '//label[contains(@for,'testim')]'.</msg>
+<status status="PASS" starttime="20230528 21:42:40.511" endtime="20230528 21:42:40.544"/>
+</kw>
+<status status="PASS" starttime="20230528 21:42:40.363" endtime="20230528 21:42:40.545"/>
+</kw>
+<status status="PASS" starttime="20230528 21:42:37.768" endtime="20230528 21:42:40.545"/>
+</test>
+<test id="s1-t5" name="Cenário 5: Fazer upload de uma foto no site" line="95">
+<kw name="Dado que acesso o site" library="setup_teardown" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>url=https://itera-qa.azurewebsites.net/home/automation</arg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230528 21:42:40.548" level="INFO">Opening browser 'chrome' to base url 'https://itera-qa.azurewebsites.net/home/automation'.</msg>
+<status status="PASS" starttime="20230528 21:42:40.547" endtime="20230528 21:42:43.152"/>
+</kw>
+<status status="PASS" starttime="20230528 21:42:40.547" endtime="20230528 21:42:43.153"/>
+</kw>
+<kw name="E fazer upload de uma foto no site">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>inputGroupFile02</arg>
+<arg>https://picsum.photos/200/300</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230528 21:42:43.155" level="INFO">Clicking element 'inputGroupFile02' with https://picsum.photos/200/300.</msg>
+<msg timestamp="20230528 21:42:43.250" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230528 21:42:43.250" level="FAIL">ValueError: 'HTTPS://PICSUM.PHOTOS/200/300' modifier does not match to Selenium Keys</msg>
+<status status="FAIL" starttime="20230528 21:42:43.154" endtime="20230528 21:42:43.277"/>
+</kw>
+<status status="FAIL" starttime="20230528 21:42:43.154" endtime="20230528 21:42:43.278"/>
+</kw>
+<status status="FAIL" starttime="20230528 21:42:40.546" endtime="20230528 21:42:43.278">ValueError: 'HTTPS://PICSUM.PHOTOS/200/300' modifier does not match to Selenium Keys</status>
+</test>
+<status status="FAIL" starttime="20230528 21:42:28.082" endtime="20230528 21:42:43.279"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="4" fail="1" skip="0" id="s1" name="Textarea">Textarea</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

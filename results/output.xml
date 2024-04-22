@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.3 on win32)" generated="20230601 15:01:38.302" rpa="false" schemaversion="3">
+<suite id="s1" name="Curso-Robot" source="D:\Projetos\curso-robot">
+<suite id="s1-s1" name="Textarea" source="D:\Projetos\curso-robot\textarea.robot">
+<test id="s1-s1-t1" name="Cenário 1: Preencher formulário Textarea Practice" line="9">
+<kw name="Dado que acesso o site" library="setup_teardown" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>url=https://itera-qa.azurewebsites.net/home/automation</arg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230601 15:01:38.959" level="INFO">Opening browser 'chrome' to base url 'https://itera-qa.azurewebsites.net/home/automation'.</msg>
+<status status="PASS" starttime="20230601 15:01:38.959" endtime="20230601 15:01:41.725"/>
+</kw>
+<status status="PASS" starttime="20230601 15:01:38.958" endtime="20230601 15:01:41.725"/>
+</kw>
+<kw name="E preencher campos">
+<kw name="First Name" library="FakerLibrary">
+<var>${Nome}</var>
+<msg timestamp="20230601 15:01:41.726" level="INFO">${Nome} = Jasmine</msg>
+<status status="PASS" starttime="20230601 15:01:41.726" endtime="20230601 15:01:41.727"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_name}</arg>
+<arg>${Nome}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230601 15:01:41.727" level="INFO">Typing text 'Jasmine' into text field '//input[@id='name']'.</msg>
+<status status="PASS" starttime="20230601 15:01:41.727" endtime="20230601 15:01:41.822"/>
+</kw>
+<kw name="Phone Number" library="FakerLibrary">
+<var>${Phone}</var>
+<msg timestamp="20230601 15:01:41.822" level="INFO">${Phone} = (326)698-2304x2540</msg>
+<status status="PASS" starttime="20230601 15:01:41.822" endtime="20230601 15:01:41.823"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_phone}</arg>
+<arg>${Phone}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230601 15:01:41.823" level="INFO">Typing text '(326)698-2304x2540' into text field '//input[@id='phone']'.</msg>
+<status status="PASS" starttime="20230601 15:01:41.823" endtime="20230601 15:01:41.910"/>
+</kw>
+<kw name="Email" library="FakerLibrary">
+<var>${Email}</var>
+<msg timestamp="20230601 15:01:41.911" level="INFO">${Email} = dennisderek@example.com</msg>
+<status status="PASS" starttime="20230601 15:01:41.910" endtime="20230601 15:01:41.911"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_email}</arg>
+<arg>${Email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230601 15:01:41.912" level="INFO">Typing text 'dennisderek@example.com' into text field '//input[@id='email']'.</msg>
+<status status="PASS" starttime="20230601 15:01:41.911" endtime="20230601 15:01:41.991"/>
+</kw>
+<kw name="Password" library="FakerLibrary">
+<var>${Password}</var>
+<doc>Generate a random password of the specified ``length``.</doc>
+<msg timestamp="20230601 15:01:41.992" level="INFO">${Password} = )#Pi3Hzs!$</msg>
+<status status="PASS" starttime="20230601 15:01:41.991" endtime="20230601 15:01:41.992"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_password}</arg>
+<arg>${Password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230601 15:01:41.993" level="INFO">Typing text ')#Pi3Hzs!$' into text field '//input[@id='password']'.</msg>
+<status status="PASS" starttime="20230601 15:01:41.992" endtime="20230601 15:01:42.103"/>
+</kw>
+<kw name="Address" library="FakerLibrary">
+<var>${Address}</var>
+<doc>:example: '791 Crist Parks, Sashabury, IL 86039-9874'</doc>
+<msg timestamp="20230601 15:01:42.104" level="INFO">${Address} = Unit 0819 Box 3354
+DPO AA 72197</msg>
+<status status="PASS" starttime="20230601 15:01:42.104" endtime="20230601 15:01:42.104"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${textarea_address}</arg>
+<arg>${Address}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230601 15:01:42.105" level="INFO">Typing text 'Unit 0819 Box 3354
+DPO AA 72197' into text field '//textarea[@id='address']'.</msg>
+<status status="PASS" starttime="20230601 15:01:42.104" endtime="20230601 15:01:42.182"/>
+</kw>
+<status status="PASS" starttime="20230601 15:01:41.725" endtime="20230601 15:01:42.182"/>
+</kw>
+<kw name="E clicar no submit">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${button_submit}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230601 15:01:42.184" level="INFO">Clicking element '//button[@name='submit']'.</msg>
+<status status="PASS" starttime="20230601 15:01:42.183" endtime="20230601 15:01:42.222"/>
+</kw>
+<status status="PASS" starttime="20230601 15:01:42.183" endtime="20230601 15:01:42.223"/>
+</kw>
+<status status="PASS" starttime="20230601 15:01:38.957" endtime="20230601 15:01:42.223"/>
+</test>
+<status status="PASS" starttime="20230601 15:01:38.331" endtime="20230601 15:01:42.224"/>
+</suite>
+<status status="PASS" starttime="20230601 15:01:38.310" endtime="20230601 15:01:42.226"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Curso-Robot">Curso-Robot</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Textarea">Curso-Robot.Textarea</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
